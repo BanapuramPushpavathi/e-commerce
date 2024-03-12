@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>E-commerce web concept</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+    padding:0;
+    margin:0;
+}
+.Navbar{
+    display:flex;
+    justify-content:space-between;
+    height: 80px;
+    align-items: center;
+    padding:0px 40px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 900;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 18px;
+    position: relative;
+    left: -100px;
+}
+li{
+    margin-left: 40px;
+}
+li:hover{
+    color:rgb(104,12,33);
+    text-decoration:underline;
+    text-underline-position:under;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    width: 350px;
+    color:white;
+    
+}
+.Navbar::after{
+    width: 482px;
+    height: 200px;
+    background-color:rgb(118,14,37);
+    position: absolute;
+    content:"";
+    right:0;
+    z-index: -1;
+    border-radius:170px 0px 0px 0px;
+    
+}
+.search{
+    background-color:rgb(104,12,33);
+    border-radius: 20px;
+    padding:2px 10px;
+    color:white;
+}
+input[type="search"]{
+    border:none;
+    outline:none;
+    padding:7px 5px;
+    border-radius: 20px;
+    background-color:rgb(104,12,33);
+    color:white;
+}
+::placeholder{
+    color:white;
+}
+
+
+/**************heading**************/
+.heading{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(239,239,239);
+    width: 104.5%;
+    height: 90%;
+    border-radius: 0px 50px 0px 0px;
+}
+h2{
+    font-size: 80px;
+    color:rgb(118,14,37);
+}
+h3{
+    font-size: 50px;
+    color:orange;
+}
+p{
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+strong{
+    font-size: 50px;
+}
+.actualprice{
+    text-decoration: line-through;
+    color:#ccf;
+    margin-left: 20px;
+    content: "/20B9";
+}
+
+.addbag{
+    display: flex;
+    margin:10px 0px;
+}
+.bagtext{
+    padding:5px 10px;
+    width:100px;
+    border:1px solid black;
+    text-align: center;
+}
+.bagicon{
+    border:1px solid black;
+    width: 30px;
+    text-align: center;
+    padding:5px 10px;
+}
+.leftcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 71px;
+}
+
+.rightcontent{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: right;
+
+}
+.rightcontent::after{
+    content: "";
+    width: 415px;
+    height: 500px;
+    position: absolute;
+    background-color:orange;
+    right: -25px;
+    border-radius: 0px 50px 0px 0px;
+    z-index: -1;
+}
+.rightcontent img{
+    position: relative;
+    right:-65px;
+
+}
+
+.shoesdown{
+    border-radius: 0px 50px 0px 0px;
+    position: relative;
+    top:50px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="Navbar">
+            <div class="logo">Fashion</div>
+            <div class="Nav">
+                <li>Men</li>
+                <li>Women</li>
+                <li>Accessories</li>
+                <li>Personal Care</li>
+            </div>
+            <div class="searchbar">
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="heading">
+            <div class="leftcontent">
+                <h2>Original</h2>
+                <h3>Premium Sneaker</h3>
+                <p>Sneakers are shoes 
+                    primarily designed for sports of other forms of 
+                    physical exercise.
+                </p>
+                <div class="price">
+                    <strong>&#8377;2449.00</strong>
+                    <div class="actualprice">
+                        &#8377;5579.00
+                    </div>
+                </div>
+
+                <div class="addbag">
+                    <div class="bagtext">
+                        Add a bag
+                    </div>
+                    <div class="bagicon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+
+                <img src="/C:/Users/Pushpa/OneDrive/Desktop/Clone icons/shoes1.jpg" width="200px" height="150px" class="shoesdown">
+            </div>
+
+            <div class="rightcontent">
+                <img src="/C:/Users/Pushpa/OneDrive/Desktop/Clone icons/shoes1.png" width="500px" height="500px">
+            </div>
+        </div>
+    </body>
+</html>
